@@ -1,0 +1,30 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label>Name:</label>
+    <input formControlName="name" />
+    
+    <label>Gender:</label>
+    <select formControlName="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+    
+    <label>Language:</label>
+    <input formControlName="language" />
+    
+    <label>State:</label>
+    <select formControlName="state">
+      <option *ngFor="let state of states" [value]="state.id">
+        {{ state.name }}
+      </option>
+    </select>
+    
+    <label>District:</label>
+    <select formControlName="district">
+      <option *ngFor="let district of districts" [value]="district.id">
+        {{ district.name }}
+      </option>
+    </select>
+    
+    <button type="submit">Submit</button>
+  </form>
+  

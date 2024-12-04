@@ -1,0 +1,68 @@
+/* Container to center the form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  /* Style for form labels */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  /* Style for input fields */
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+    font-size: 16px;
+  }
+  
+  /* Focus effect for input fields */
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+  }
+  
+  /* Style for the submit button */
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the button */
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Ensure a little spacing between inputs and the button */
+  button[type="submit"] {
+    margin-top: 10px;
+  }
+  
+  /* Optional: Add some spacing between fields */
+  input[type="text"],
+  input[type="number"],
+  button[type="submit"] {
+    margin-bottom: 10px;
+  }
+  
